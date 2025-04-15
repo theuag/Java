@@ -1,5 +1,5 @@
 package ifsp;
-
+import java.util.Scanner;
 
 public class Relogio {
 	
@@ -13,22 +13,22 @@ public class Relogio {
 			seg = c;
 		}
 
-	    public void setHoras(Integer a) {
+	    public void setHora(Integer a) {
 	    	this.hora = a;
 	    }
-		public Integer getHoras() {
+		public Integer getHora() {
 			return hora;
 			}
-	    public void setSegundos(Integer b) {
-	    	this.seg = b;
+	    public void setSeg(Integer c) {
+	    	this.seg = c;
 	    }
-		public Integer getSegundos() {
+		public Integer getSeg() {
 			return seg;
 			}
-		public void setMinutos(Integer c) {
-		   this.min = c;
+		public void setMin(Integer b) {
+		   this.min = b;
 		    }
-		public Integer getMinutos() {
+		public Integer getMin() {
 				return min;
 				}
 		
@@ -39,9 +39,17 @@ public class Relogio {
 	    	
 	    }
 	    public static void main(String[] args) {
-	    	Relogio tempo = new Relogio(10, 8, 40);
-	    	tempo.setHoras(22);
-	    	System.out.println(tempo.getHoras() + ":" + tempo.getMinutos() +":"+tempo.getSegundos());
+	    	Scanner sc = new Scanner(System.in);
+		    	System.out.println("Horas:");
+		    	int a = sc.nextInt();
+		     	System.out.println("Minutos:");
+		    	int b = sc.nextInt();
+		     	System.out.println("Segundos:");
+		    	int c = sc.nextInt();
+		    	
+	    	
+	    	Relogio tempo = new Relogio(a, b, c);
+	    	System.out.println(tempo.getHora() + ":" + tempo.getMin() +":"+tempo.getSeg());
 	    	
 	    }
 	    
