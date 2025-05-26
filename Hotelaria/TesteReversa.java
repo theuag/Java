@@ -12,7 +12,7 @@ public class TesteReversa {
 		
 		Reserva r2 = new Reserva(6, 1,6,2025,30,6,2025,"Matheus",54321,"matheus@gmail.com");
 
-		System.out.println( r1 );
+		System.out.println( r2 );
 		
 	}
 
